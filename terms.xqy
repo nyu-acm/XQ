@@ -9,7 +9,7 @@ import module namespace functx="http://www.functx.com"
 (: Inspired by Jarrett Drake's 2016 talk "RadTech Meets RadArch: Towards A New Principle for Archives and Archival Description." :)
 (: Code and all faults courtesy of Kelly Bolding. :)
 
-declare variable $ead as document-node()+ := collection("file:///home/menneric/Elysium/work/dlts-finding-aids-ead-sample-set-2/ead-files/tamwag?recurse=yes;select=*.xml");
+declare variable $ead as document-node()+ := collection("file:///home/ras26/Desktop/findingaids_eads/tamwag?recurse=yes;select=*.xml");
 <results>
 {
 for $bioghist in $ead//ead:ead/ead:archdesc/ead:bioghist[ead:p[matches(string(.), '(\s|^)(influential|renowned|not(able|ed)|distinguished|reputable|prestigious|prominent|significant|respected|expert|important|prolific|ambitious|great(est)?|successful|wealthy?|fortune|famous|interesting|father\sof\s(the|American)|man\sof\sletters|genius|foremost|acclaimed|popular|celebrated|esteemed|(pre)?eminent|talented|exclusive)(\s|$)', 'i')]]
