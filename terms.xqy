@@ -7,7 +7,7 @@ import module namespace functx="http://www.functx.com"
     
 (: Reports on "terms of aggrandizement" in bioghist notes within a directory of EAD files. Edit the file path to run. :)
 (: Inspired by Jarrett Drake's 2016 talk "RadTech Meets RadArch: Towards A New Principle for Archives and Archival Description." :)
-(: Code created by Kelly Bolding. :)
+(: Code created by Kelly Bolding. We borrow it with much gratitude. :)
 
 declare variable $ead as document-node()+ := collection("file:///Users/ras26/Desktop/findingaids_eads/tamwag?recurse=yes;select=*.xml?recurse=yes;select=*.xml");
 <results>
